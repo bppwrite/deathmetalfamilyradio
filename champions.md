@@ -26,7 +26,7 @@ permalink: /champions/
 </div>
 
 <div class="col-sm-12 wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-          <h1 class="header-title">THE TEAM</h1>
+          <h1 class="header-title">Champions of Darkness</h1>
           <h2 class="subtitle">Meet the best team in the world
           </h2>
           <hr>
