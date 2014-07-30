@@ -4,6 +4,8 @@
 
     <div class="col-md-6">
 
+      <p>{{ site.title }}</p>
+
       <p>{{ site.description }}</p>
 
     </div>
@@ -11,7 +13,7 @@
     <div class="col-md-6">
 
       <ul>
-        <li>{{ site.title }}</li>
+        <li><p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p></li>
         <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
       </ul>
 
