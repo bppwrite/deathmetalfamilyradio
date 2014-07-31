@@ -1,0 +1,50 @@
+---
+layout: page
+title: Forsaken Archives
+subtitle: Totally Cool Stuff We Do
+---
+
+{{ site.paginator | json }}
+
+{% for post in paginator.posts %}
+  {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
+  {% if mod_three == '0' %}
+    <div class="row-blog row">
+  {% endif %}
+      <div class="col-blog col-md-4 wow fadeInLeft animated" style="visibility: visible;">
+        <img src="/img/20140722191216(1).jpg" alt="blog-pic" />
+        <h2 class="title-blog">
+          <a href="blog-post.html">{{ post.title }}</a>
+        </h2>
+        <p class="date-blog">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </p>
+        <p class="p-blog">
+          {{ post.excerpt }}
+        </p>
+        <a href="{{ post.url }}" class="btn btn-flat">Read More   »</a>
+      </div>
+  {% if mod_three == '2' or forloop.last %}
+    </div>
+  {% endif %}
+{% endfor %}
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+  <ul class="pager">
+    {% if paginator.previous_page %}
+      <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+          &larr; Older
+        </a>
+      </li>
+    {% endif %}
+    {% if paginator.next_page %}
+      <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+          Newer &rarr;
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+{% endif %}
