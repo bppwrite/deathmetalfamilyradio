@@ -30,16 +30,21 @@ subtitle: Totally Cool Stuff We Do
 {% endfor %}
 
 <!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="/archive/page{{ paginator.previous_page }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="/archive/page{{ paginator.next_page }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+{% if paginator.total_pages > 1 %}
+  <ul class="pager">
+    {% if paginator.previous_page %}
+      <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+          &larr; Older
+        </a>
+      </li>
+    {% endif %}
+    {% if paginator.next_page %}
+      <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+          Newer &rarr;
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+{% endif %}
