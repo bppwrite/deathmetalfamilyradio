@@ -4,15 +4,31 @@
 
     <div class="col-md-6">
 
+      <h2>{{ site.title }}</h2>
+
       <p>{{ site.description }}</p>
 
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-3">
 
       <ul>
-        <li>{{ site.title }}</li>
+        <li>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></li>
         <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li>&copy; copyright 2014
+          <a href="http://newplays.org">Bloomington Playwrights Project</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="col-md-3">
+
+      <ul>
+        <li><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
+        <li><a href="{{ "/about/" | prepend: site.baseurl }}">Archive</a></li>
+        <li><a href="{{ "/about/" | prepend: site.baseurl }}">Champions</a></li>
+        <li><a href="{{ "/about/" | prepend: site.baseurl }}">Contact</a></li>
       </ul>
 
     </div>
