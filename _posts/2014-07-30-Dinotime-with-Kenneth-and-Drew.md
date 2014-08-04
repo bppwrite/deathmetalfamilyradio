@@ -2,14 +2,19 @@
 layout: post
 title:  Dinotime with Kenneth and Drew
 date:   2014-07-30 18:20:00
-author: "Kenneth and Drew"
+author: Kenneth and Drew
+image:
+  caption: The Champions of Darkness
+  path: /img/champions.jpg
 ---
 
 Kenasaurus-Rex and Drewasaurus talk about their new band, Carnisaur Kingdom.... And worry about mammals.
 
+![{{ page.image.caption }}]({{ page.image.path }})
+
 Bacon ipsum dolor sit amet pork belly leberkas fatback swine venison pork loin. Biltong ham hock strip steak sausage prosciutto. Swine cow flank, shankle strip steak shank spare ribs ribeye jowl tongue. Fatback chuck drumstick ball tip ham turkey chicken frankfurter ham hock bacon capicola tenderloin.
 
-{% include video.html video=Um4OpbjxwD0 %}
+{% include video.html video="Um4OpbjxwD0" %}
 
 Pork bacon pork chop jerky. Shoulder pork belly bacon hamburger jerky chicken pork spare ribs. Pastrami pancetta ground round chuck tongue. Drumstick tongue ball tip, tenderloin tri-tip leberkas beef.
 

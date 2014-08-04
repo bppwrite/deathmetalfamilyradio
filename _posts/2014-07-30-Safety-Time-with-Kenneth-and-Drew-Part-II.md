@@ -2,11 +2,15 @@
 layout: post
 title:  Safety Time with Kenneth and Drew, Part II
 date:   2014-07-30 18:00:00
-author: "Kenneth and Drew"
+author: Kenneth and Drew
+image:
+  caption: The Champions of Darkness
+  path: /img/champions.jpg
 ---
 
 Kenneth and Drew, stars of the wildly popular "Death Metal Podcast for Kids," teach us an important lesson about safety. Again.
 
+![{{ page.image.caption }}]({{ page.image.path }})
 
 Bacon ipsum dolor sit amet pork belly leberkas fatback swine venison pork loin. Biltong ham hock strip steak sausage prosciutto. Swine cow flank, shankle strip steak shank spare ribs ribeye jowl tongue. Fatback chuck drumstick ball tip ham turkey chicken frankfurter ham hock bacon capicola tenderloin.
 
