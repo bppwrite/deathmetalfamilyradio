@@ -2,32 +2,36 @@
 layout: default
 ---
 
-<div class="row">
+<div class="container">
 
-  <div class="col-md-8">
+  <div class="row">
 
-    <p class="meta">
-      <strong>{{ page.date | date: "%b %-d, %Y" }}</strong>
-      {% if page.author %} • {{ page.author }}{% endif %}
-      {% if page.meta %} • {{ page.meta }}{% endif %}
-    </p>
+    <div class="col-md-8">
 
-    <article>
-      {{ content }}
-    </article>
+      <p class="meta">
+        <strong>{{ page.date | date: "%b %-d, %Y" }}</strong>
+        {% if page.author %} • {{ page.author }}{% endif %}
+        {% if page.meta %} • {{ page.meta }}{% endif %}
+      </p>
 
-  </div>
+      <article>
+        {{ content }}
+      </article>
 
-  <div class="col-md-4">
-    <p>
-      This is where some general stuff about DMFR should go.
-    </p>
-    <p>
-      Along with plugs for BPP, Phoenix, etc.
-    </p>
-    <p>
-      As well as some teasers about the next couple or previous couple of posts.
-    </p>
+    </div>
+
+    <div class="col-md-4">
+      <p>
+        This is where some general stuff about DMFR should go.
+      </p>
+      <p>
+        Along with plugs for BPP, Phoenix, etc.
+      </p>
+      <p>
+        As well as some teasers about the next couple or previous couple of posts.
+      </p>
+    </div>
+
   </div>
 
 </div>
