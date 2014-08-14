@@ -362,8 +362,8 @@ a:visited { color: #205caa; }
     height: 60px;
     width: 60px;
     padding-top: 10px;
-    border: solid 2px #28D8B3;
-    color: #28D8B3;
+    border: solid 2px #aba1a3;
+    color: #FF0000;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -378,8 +378,8 @@ a:visited { color: #205caa; }
 }
 
 .wrapper-team-pic:hover .team-icon:hover {
-    background-color: #28D8B3;
-    color: #FFF;
+    background-color: #aba1a3;
+    color: #FF0000;
 }
 
 .team-t {
